@@ -1,14 +1,12 @@
-from distutils.log import debug
-from unicodedata import name
 from flask import Flask
 
 
 app = Flask(__name__)
 
-@app.route("/" , methods=['GET' , 'POST'])
+@app.route("/",methods=['GET','POST'])
 
 def index():
-    return "Welcome to Innovia technologies! Now we'll Start Housing Price Predictor App"
+    return "<marquee> Welcome to Innovia technologies! </marquee>"
 
 
 if __name__=="__main__":
